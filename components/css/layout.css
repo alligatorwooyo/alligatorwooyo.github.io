@@ -204,22 +204,28 @@ a:hover{
 .container {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 .component {
-    width: calc(50% - 10px ); /* Each component takes half of the screen minus 60px (30px padding on each side) */
+    width: 50%;
     background-color: #E7E9F2;
     text-align: center;
 }
 
+.component:first-child {
+    margin-left: 30px;
+    margin-right: 1%;
+}
 
+.component:last-child {
+    margin-right: 30px;
+    margin-left: 1%;
+}
 
 .component-image {
     display: block;
-    margin: 0 auto 20px auto;
     max-width: 100%; /* Ensures the image fits within the component */
 }
 
