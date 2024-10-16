@@ -215,6 +215,8 @@ a:hover{
 
 .component-head {
     padding: 20px;
+    padding-right: 0;
+    padding-left: 0;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
