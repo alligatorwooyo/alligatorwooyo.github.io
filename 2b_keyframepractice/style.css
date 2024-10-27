@@ -1,0 +1,188 @@
+body{
+	margin:0;
+	padding:0;
+   background-color: #999;
+   font-size: 40px;
+   font-family: sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+
+
+.outer{
+  text-align: center;
+}
+
+.page{
+	position:relative;
+	margin-top:0px;
+	background-color: #FFF;
+   max-width:1200px;
+   width:100%;
+  height:100%;
+  display: inline-block;
+   text-align: left;
+   /* height:99vh; */
+}
+
+/* animation 1 */
+
+.a_box{
+   text-align: center;
+   font-size:130px;
+   color:#FFF;
+   background-color: #E7F1FA;
+   padding:20px;
+   width:200px;
+   height:200px;
+  border-radius:100px;
+
+   box-sizing: border-box;
+   margin:50px;
+   display: inline-block;
+
+   outline: 1px solid transparent;
+
+   animation-delay: 2s;
+   animation-fill-mode: forwards;
+   animation-name: change1;
+   animation-duration: 5s;
+   animation-timing-function: ease-out;
+   animation-iteration-count: infinite;
+
+
+}
+
+@keyframes change1{
+ 
+ 0% {
+   background-color: #E7F1FA;
+   border-radius: 100px;
+ }
+ 
+ 50% {
+   background-color: #CDEBCD;
+   border-radius: 0px;
+   transform: rotate(180deg) scale(1.5);
+ }
+ 
+ 100% {
+   background-color: #E7F1FA;
+   border-radius: 100px;
+   transform: rotate(360deg) scale(0.5);
+ }
+
+}
+
+
+/* animation 1 */
+
+
+/* animation 2 */
+
+
+.b_box{
+  text-align: center;
+  font-size:130px;
+  color:#FFF;
+  background-color: #D9D9E7;
+  padding:20px;
+  width:200px;
+  height:200px;
+ border-radius:100px;
+
+  box-sizing: border-box;
+  margin:50px;
+  display: inline-block;
+
+  outline: 1px solid transparent;
+  animation-delay: 2s;
+   animation-fill-mode: forwards;
+   animation-name: change2;
+   animation-duration: 5s;
+   animation-timing-function: ease-out;
+   animation-iteration-count: infinite;
+
+}
+
+
+
+@keyframes change2{
+  
+  0% {
+    background-color: #D9D9E7;
+    border-radius: 100px;
+    transform: translate(0, 0) scale(1);
+  }
+  
+  50% {
+    background-color: #A3A3E1;
+    border-radius: 0px;
+    transform: translate(200px, 0px) scale(1.2);
+  }
+  
+  100% {
+    background-color: #D9D9E7;
+    border-radius: 100px;
+    transform: translate(100px, 100px) scale(1);
+  }
+}
+/* animation 2 */
+
+
+/* animation 3 */
+
+.c_box{
+  text-align: center;
+  font-size:130px;
+  color:#FFF;
+  background-color: #B6F0DD;
+  padding:20px;
+  width:200px;
+  height:200px;
+ border-radius:100px;
+
+  box-sizing: border-box;
+  margin:50px;
+  display: inline-block;
+
+  outline: 1px solid transparent;
+  animation-delay: 2s;
+   animation-fill-mode: forwards;
+   animation-name: change3;
+   animation-duration: 5s;
+   animation-timing-function: ease-out;
+   animation-iteration-count: infinite;
+
+
+}
+
+/* animation 3 */
+
+
+@keyframes change3{
+ 
+ 0% {
+  background-color: #B6F0DD;
+    border-radius: 100px;
+    transform: skew(0deg);
+  }
+  
+  50% {
+    background-color: #FFA9DC;
+    border-radius: 0px;
+    transform: skew(-30deg) scale(1.1);
+  }
+  
+  100% {
+    background-color: #B6F0DD;
+    border-radius: 100px;
+    transform: skew(0deg) scale(2);
+  }
+}
+
