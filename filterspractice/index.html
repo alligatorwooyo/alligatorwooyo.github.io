@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters Practice</title>
+
+	<style>
+     .my_filter{
+
+      -webkit-filter: blur:50px contrast(20%); 
+      filter: blur(50px) contrast(20%);  
+
+     }
+
+
+    .my_filter:hover{
+
+      animation: 1s myfilteranimation forwards;
+
+    }
+
+     @keyframes myfilteranimation{
+      
+	      100%{
+	       -webkit-filter: blur:0px contrast(1); 
+	        filter: blur(0px) contrast(1);
+	       }
+
+     }
+
+
+
+
+	</style>
+</head>
+<body>
+
+<img class="my_filter" src="img/flower.jpg" height="500" alt="flower">
+
+</body>
+</html>
