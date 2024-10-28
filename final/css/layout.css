@@ -1,0 +1,391 @@
+body {
+    
+    font-family:Poppins, sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+
+    
+}
+
+
+.sonylogo{
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+
+.sonyimg{
+    width:40px;
+}
+
+
+/* Sticky Navbar */
+#topofpage {
+    position: sticky;
+    top: 30px;
+    z-index: 1000;
+    margin-left: 30px;    /* Adds 30px margin on the left */
+    margin-right: 30px;   /* Adds 30px margin on the right */
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #E7E9F2;
+    opacity: .85;
+    
+}
+
+
+.pslogo {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 3px;
+    text-align: left;
+    justify-content: center;
+}
+
+.pslogoimg {
+  width:36px;
+}
+
+.nav{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.icon-nav {
+    
+    margin-right: 10px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu{
+    display: none;
+}
+
+
+
+.search_icon {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.search_img {
+    width: 20px;
+    height: auto;
+    transition: filter 0.3s ease; /* 添加过渡效果 */
+}
+
+.search_icon:hover .search_img {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(99%) saturate(3958%) hue-rotate(196deg) brightness(100%) contrast(100%);
+}
+
+
+
+
+#topofpage a {
+    text-decoration: none;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left:25px;
+  margin-right:25px;
+
+}
+
+#topofpage a:hover{
+   color: #2D75C7;
+}
+
+/* humburger */
+#menuoverlay{
+    display: inline-block;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 移动到屏幕的正中 */
+    z-index: 1001;
+    border-radius: 6px;
+    width:95vw;
+    height: 97vh;
+    display: none;
+    text-align: left;
+    opacity: .9;
+  }
+.menuitems{
+    margin-top: 30px;
+}
+.menuitems a {
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 500;
+    margin-left: 30px;
+    padding-top: 20px;
+    color:black;
+    cursor: pointer;
+  }
+
+.menuitems a:hover{
+   color: #2D75C7;
+}
+
+#close{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav, .icon-nav{
+    display: none;
+  }
+
+  #menu{
+    display: inline-block;
+    margin-right: 30px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .topofpage {
+
+    margin-left: 3.9%;
+    margin-right: 3.9%;
+    }
+    
+}
+
+
+/* blue hero */
+.blue-block {
+    background: linear-gradient(to right, #164BB7, #010A30); /* Deep blue gradient */
+    height: 720px; /* Adjust height as needed */
+    width: 100%; /* Full screen width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -85px;
+    padding: 0 30px;
+    padding-top: 50px;
+}
+
+.hero_text_headline {
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero_content {
+    color: white;
+    font-weight: 200;
+    font-size: 18px; /* Adjust text size */
+    max-width: 45%;
+}
+
+.psconsoleimage {
+    min-width: 300px;
+    justify-content: left; 
+    padding-right: 30px;
+}
+
+.psconsoleimage .image {
+    width: 100%; /* Image takes the full width of the anchor */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.component {
+
+    width: 100%;
+    background-color: #E7E9F2;
+    text-align: center;
+}
+
+
+.component-image {
+    display: block;
+    max-width: 100%; /* Ensures the image fits within the component */
+}
+
+.component img{
+  cursor: pointer;
+
+}
+
+.component img:hover{
+  animation-fill-mode: forwards;
+  animation-name: changescale;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes changescale{
+    from {transform: scale(1,1)}
+    to {transform: scale(1.08,1.08)}
+}
+
+.component-head {
+    padding:20px;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:black;
+ }   
+
+.component-text {
+    padding: 20px;
+    padding-top: 0;
+    font-size: 14px;
+    color:black;
+}
+
+/* game page */
+.gameheroblock{
+    background: linear-gradient(to bottom right , white 50%, #0034D8 50%); /* 上半部分白色，下半部分蓝色 */
+    height: 360px; /* Adjust height as needed */
+    width: 100%; /* Full screen width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: -85px; */
+    padding: 0 50px;
+    overflow: hidden; /* 隐藏超出容器的部分 */
+    position: relative; /* 设为相对定位 */
+}
+.gameheroimg{
+    width:100%;
+}
+
+@media screen and (max-width: 800px) {
+ 
+.gameheroblock{
+
+     width: 100%; /* 容器宽度为100% */
+    height: 360px; /* 设置容器高度 */
+    overflow: hidden; /* 隐藏超出部分 */
+    display: flex; /* 使用Flexbox进行布局 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 0 30px; /* 容器左右内边距30px */
+    box-sizing: border-box; /* 包含内边距和边框在内的总宽度计算 */
+
+}
+
+.gameheroimg{
+    height: 100%; /* 设置图片高度为100%，保持容器高度 */
+    width: auto; /* 宽度自适应，保持比例 */
+
+}
+    
+}
+
+.blue-background {
+    height: calc(100vh-200px); /* 使该 div 高度填充至屏幕底部 */
+    background-color: #0034D8; /* 设置背景颜色为蓝色 */
+    text-align: center;
+    color: white; /* 设置文字颜色为白色 */
+    padding: 50px; /* 添加内边距 */
+}
+
+
+.slider-container {
+    width: 100%; /* 占满页面的宽度 */
+    display: flex;
+    justify-content: center; /* 水平居中整个滑动区域 */
+    padding: 50px 0; /* 外层容器的上下边距，可调整 */
+}
+
+.slider {
+    width: 800px; /* 滑动区域的宽度，根据需求调整 */
+    overflow: hidden; /* 隐藏溢出的图片 */
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    animation: slide 50s linear infinite; /* 滑动动画 */
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0; /* 保持每张图片的大小 */
+    padding-left: 10px;
+}
+
+/* 动画定义 */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* 初始位置 */
+    }
+    100% {
+        transform: translateX(-1000px); /* 滑动到第二组图片的末尾 */
+    }
+}
+
+
+.gearheroblock {
+    background: linear-gradient(to left bottom, #B9BFCD, #313841); 
+    display: flex;
+    flex-direction: column; /* 使文字在图片上方 */
+    justify-content: center; /* 让内容垂直居中 */
+    align-items: center; /* 让内容水平居中 */
+    height: 480px;
+    text-align: center; /* 文字左右居中 */
+    padding: 0 30px;
+}
+
+.gear-text-content {
+max-width: 700px;
+ color: white;
+ margin-bottom: 20px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.gearheroimg {
+    width: 100%;
+    max-width: 800px;
+}
+
+.storemenublock{
+    background: white; 
+    display: flex;
+    flex-direction: column; /* 使文字在图片上方 */
+    justify-content: center; /* 让内容垂直居中 */
+    align-items: center; /* 让内容水平居中 */
+    height: 300px;
+    text-align: center; /* 文字左右居中 */
+    padding: 0 30px;
+}
+.storemenuimg{
+    width: 80%;
+}
+
+
+
